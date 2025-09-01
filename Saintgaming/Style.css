@@ -1,0 +1,294 @@
+/* style.css */
+
+/* Body background */
+body {
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+               url('background.jpg');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   color: white;
+ }
+ 
+ /* Main title style */
+ .auto-style1 {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 64px;
+   color: #00aaff;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   text-shadow: 0 0 12px #003366;
+   text-align: center;
+   margin-top: 100px; /* Spacing above button*/
+ }
+ 
+ /* Optional: Center content wrapper */
+ .container {
+   text-align: center;
+   padding-top: 100px;
+ }
+ /* ===== General Reset ===== */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: 'Orbitron', sans-serif;
+   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+               url('background.jpg');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   color: white;
+   line-height: 1.6;
+ }
+ 
+ /* ===== Header & Title ===== */
+ .container {
+   text-align: center;
+   padding: 100px 20px 40px;
+ }
+ 
+ .auto-style1 {
+   font-size: 64px;
+   color: #00aaff;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   text-shadow: 0 0 12px #003366;
+ }
+ 
+ /* ===== Navigation Bar ===== */
+ nav {
+   background: rgba(0, 0, 0, 0.8);
+   padding: 15px 20px;
+   text-align: center;
+ }
+ 
+ nav a {
+   color: #00aaff;
+   text-decoration: none;
+   margin: 0 15px;
+   font-size: 18px;
+   transition: color 0.3s ease, text-shadow 0.3s ease;
+ }
+ 
+ nav a:hover {
+   color: #ffffff;
+   text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+ }
+ 
+ /* Button */
+.btn {
+   display: block;            /* so it can be centered with margin */
+   margin: 0 auto;            /* centers button */
+   padding: 12px 25px;
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+   background: #00aaff;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+ }
+ 
+ .btn:hover {
+   background: #0077cc;
+   transform: scale(1.05);
+   box-shadow: 0 0 15px #00aaff;
+ }
+ 
+ /* ===== Responsive ===== */
+ @media (max-width: 768px) {
+   .auto-style1 {
+     font-size: 42px;
+   }
+ 
+   nav a {
+     display: block;
+     margin: 10px 0;
+   }
+ }
+ /* Logo fixed in the corner */
+.logo {
+   position: fixed;
+   top: 20px;
+   left: 20px;     /* change to right:20px; if you want top-right */
+   height: 100px;
+   width: auto;
+   z-index: 1000;
+ }
+/* Header content now aligned to the top */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* push content to the top */
+  align-items: center;          /* keep things centered horizontally */
+  min-height: 100vh;            /* page takes full height */
+  padding-top: 150px;           /* push content below the logo */
+  text-align: center;
+}
+
+ /* Centered hero section */
+ .header {
+   display: flex;
+   flex-direction: column;   /* stack items vertically */
+   justify-content: center;
+   align-items: center;
+   height: 100vh;            /* full screen height */
+   text-align: center;
+ }
+ 
+ .auto-style1 {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 64px;
+   color: #00aaff;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   text-shadow: 0 0 12px #003366;
+   margin: 20px 0;
+ }
+ 
+ .btn {
+   background: #00aaff;
+   border: none;
+   padding: 15px 30px;
+   color: #fff;
+   font-size: 20px;
+   font-family: 'Orbitron', sans-serif;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+ 
+ .btn:hover {
+   background: #003366;
+ }
+ .features {
+   padding: 50px 20px;
+   background-color: #0d0d0d;
+   color: #fff;
+   text-align: center;
+}
+
+.features h2 {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 2rem;
+   margin-bottom: 40px;
+   color: #00b7ff;
+}
+
+.feature-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+}
+
+.feature-card {
+   background-color: #1a1a1a;
+   padding: 20px;
+   border-radius: 15px;
+   width: 250px;
+   box-shadow: 0 0 15px rgba(0, 225, 255, 0.8);
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 0 25px rgba(0, 225, 255, 0.8);
+}
+
+.feature-card img {
+   width: 60px;
+   margin-bottom: 15px;
+}
+
+.feature-card h3 {
+   font-family: 'Orbitron', sans-serif;
+   margin-bottom: 10px;
+   color: #00e1ff;
+}
+
+.feature-card p {
+   font-size: 0.95rem;
+   line-height: 1.4;
+   color: #ccc;
+}
+.features {
+   padding: 50px 20px;
+   background-color: #0d0d0d;
+   color: #fff;
+   text-align: center;
+}
+
+.features h2 {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 2rem;
+   margin-bottom: 40px;
+   color: #00ccff;
+}
+
+.feature-cards {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 30px;
+   justify-items: center;
+   align-items: stretch;
+}
+.platforms-grid {
+   padding: 50px 20px;
+   background-color: #111;
+   text-align: center;
+   color: #fff;
+}
+
+.platforms-grid h2 {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 2rem;
+   margin-bottom: 40px;
+   color: #00e1ff;
+}
+
+/* 2x3 Grid */
+.platform-cards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* 3 columns */
+   grid-template-rows: repeat(2,rgba 1fr);    /* 2 rows */
+   gap: 40px;
+   justify-items: center;
+   align-items: center;
+}
+
+/* Circular Cards */
+.platform-card {
+   background-color: #1a1a1a;
+   width: 140px;       /* bigger card */
+   height: 140px;
+   border-radius: 50%; /* circular */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 0 20px rgba(0, 204, 255, 0.8);
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.platform-card:hover {
+   transform: scale(1.15);
+   box-shadow: 0 0 35px rgba(0, 204, 255, 0.8);
+}
+
+.platform-card img {
+   overflow: hidden;      /* Ensures the image doesn't spill out */
+   object-fit: cover;     /* Makes sure image covers the circle entirely */
+   object-position: center; /* Keeps the main part of image centered */
+   width: 100px;    /* adjust image size */
+   height: 100px;
+   object-fit: contain;
+}
